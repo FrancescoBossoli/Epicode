@@ -1,0 +1,228 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff8db;
+    }
+
+header {
+    background-color: #00a0c6;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-top: 32px;    
+}    
+
+main {
+    padding-block: 5px;
+    padding-inline: 22px;
+    font-size: 20px;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight:600;
+    color: #027794;
+    padding: 30px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+figcaption {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.1em;    
+}
+
+address {
+    padding-top: 18px;
+    padding-bottom: 25px;
+    font-size: 1.2em;
+}
+
+mark {
+    background-color: #027794;
+    color: white;
+}
+
+figure {
+    text-align: center;
+}
+
+a:link {
+    color:#ce604d ;
+}
+
+strong {
+    color:#027794;
+    font-weight: 500;
+}
+
+hr {
+    border-color: black;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-style: dashed ;
+    margin-top: 45px;
+}
+
+p {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+b {
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 60px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+dl {
+    padding-top:10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+dd {
+    margin-left:35px;
+}
+
+
+
+/* HEADER */
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.6em;
+    color: white;
+    padding-inline: 48px;
+    }
+
+header h1 span {
+    background-color: white;
+    color: #00a0c6;
+}
+
+header h2 {
+    font-size: 1.5em;
+    padding-block: 40px;
+    font-variant: small-caps;
+    text-transform: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* MAIN */
+
+header + hr {
+    color: #027794;
+    height: 6px;
+    background-color: #027794;
+    margin: 0px;
+    border: 0px;
+}
+
+h2 + figure > img {
+    width: 340px;
+    height: 180px;
+    padding: 10px;
+    border-color: #dcdcdc;
+    border: 1px;
+    border-style:solid;
+}
+
+address > img {
+    width: 30px;
+    height: 30px;
+}
+
+blockquote p {
+    margin-top: 2px;
+    background-color: #c9d9fc;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+    padding-top:20px;
+    padding-bottom: 50px;
+    padding-inline: 10px;
+    line-height: 1.5em;
+    border-radius: 15pt;
+}
+
+section > h2 {
+    border-top: 1px;
+    border-style: dashed;
+    border-color: black;
+    margin-top:45px;
+    padding-top: 45px;    
+}
+
+main + hr {
+    margin-top:80px;
+    border-top:1px dashed black;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-inline: 20px;
+    padding-top:30px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #353535;
+    border-top: 6px solid #027794;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    padding-inline: 25px;
+    letter-spacing: 0.8px;
+    line-height: 0.8em;
+}
+
+kbd {
+    color:yellow;
+    font-style: oblique;
+    font-size: bold;
+    font-weight: 600;
+}
+
+p + small {
+    font-size:1em;
+    color:#999999;
+}
+
+footer > hr {
+    padding: 0px;
+    margin:0px;
+    border:0px;
+}
+
+footer > p {
+    padding-block: 10px;
+}
+
+footer > p:last-of-type {
+    padding-bottom:0px;
+}
