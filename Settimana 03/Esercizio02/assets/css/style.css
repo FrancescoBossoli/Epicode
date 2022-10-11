@@ -1,0 +1,12 @@
+html {
+    background: linear-gradient(270deg,#db671c 15%,#c43512 60%, #db671c);
+    color: black;
+    text-align: center;
+}
+h1 {
+    color: white;
+    line-height: 3;
+}
+p {
+    line-height: 2;
+}
