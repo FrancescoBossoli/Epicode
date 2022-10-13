@@ -1,0 +1,20 @@
+html {
+    background: linear-gradient(270deg,#db671c 15%,#c43512 60%, #db671c);
+    color: black;
+    text-align: center;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: white;    
+}
+p, h3 {
+    line-height: 0.3;
+}
+li {
+    text-align: left;
+}
