@@ -4,8 +4,13 @@ function spendi() {
         var spese = 0;
         var acquisto = 0;
         var rimanenza = budget;
+        var half = false;
         document.getElementById('scelta').innerHTML = "Il tuo budget iniziale è " + budget + "€";
         for (spese = 0; rimanenza >= (budget / 10); spese++) {
+            if (half == false && rimanenza <= (budget/2)) {
+                half = true;
+                document.getElementById('lista').innerHTML += "<br><span><b>Sei arrivato a spendere metà del budget</b></span><br>";
+            }
             acquisto = Math.floor(Math.random() * budget / 10);
             rimanenza -= acquisto;
             document.getElementById('lista').innerHTML += "<li>Ammontare della spesa: €" + acquisto + "<span>";
