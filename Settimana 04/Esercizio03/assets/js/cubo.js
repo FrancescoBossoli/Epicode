@@ -53,7 +53,7 @@ function play() {
     if (btnPlay[0].firstChild.className == "fas fa-play") {
         btnPlay[0].firstChild.className = "fas fa-stop";
         interval = setInterval(turnRight, 1000);          
-        }    
+    }    
     else {
         clearInterval(interval);
         btnPlay[0].firstChild.className = "fas fa-play";
