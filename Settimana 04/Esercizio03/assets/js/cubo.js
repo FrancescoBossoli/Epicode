@@ -16,37 +16,37 @@ btnPlay[0].addEventListener("click", play)
 function turnRight() {
     let angle = Number(cube[0].style.transform.replace("rotateY(", "").replace("deg)",""));
     for ( index = 0 ; index < sections; index++) {
-        cube[index].style.transform = "rotateY("+(angle+90)+"deg)";
+        cube[index].style.transform = "rotateY("+(angle-90)+"deg)";
     }
 }
 function overRight() {
     let angle = Number(cube[0].style.transform.replace("rotateY(", "").replace("deg)",""));
     for ( index = 0 ; index < sections; index++) {
-        cube[index].style.transform = "rotateY("+(angle+35)+"deg)";
+        cube[index].style.transform = "rotateY("+(angle-35)+"deg)";
     }
 }
 function outRight() {
     let angle = Number(cube[0].style.transform.replace("rotateY(", "").replace("deg)",""));
     for ( index = 0 ; index < sections; index++) {
-        cube[index].style.transform = "rotateY("+(angle-35)+"deg)";
+        cube[index].style.transform = "rotateY("+(angle+35)+"deg)";
     }
 }
 function turnLeft() {
     let angle = Number(cube[0].style.transform.replace("rotateY(", "").replace("deg)",""));
     for ( index = 0 ; index < sections; index++) {
-        cube[index].style.transform = "rotateY("+(angle-90)+"deg)";
+        cube[index].style.transform = "rotateY("+(angle+90)+"deg)";
     }
 }
 function overLeft() {
     let angle = Number(cube[0].style.transform.replace("rotateY(", "").replace("deg)",""));
     for ( index = 0 ; index < sections; index++) {
-        cube[index].style.transform = "rotateY("+(angle-35)+"deg)";
+        cube[index].style.transform = "rotateY("+(angle+35)+"deg)";
     }
 }
 function outLeft() {
     let angle = Number(cube[0].style.transform.replace("rotateY(", "").replace("deg)",""));
     for ( index = 0 ; index < sections; index++) {
-        cube[index].style.transform = "rotateY("+(angle+35)+"deg)";
+        cube[index].style.transform = "rotateY("+(angle-35)+"deg)";
     }
 }
 function play() {
