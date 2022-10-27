@@ -42,7 +42,6 @@ button[4].addEventListener("click", show);
 function menu() {
     if (li[0].style.display == "none") {
         ul[0].style.backgroundColor = "cornflowerblue";
-        ul[0].focus();
         for (let i = 0; i < li.length; i++) {
             li[i].style.display = "block";
             li[i].style.backgroundColor = "mediumpurple";
