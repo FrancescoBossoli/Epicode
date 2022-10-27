@@ -5,7 +5,7 @@ var li = ul[0].children;
 var list = ul[1].children;
 var button = document.getElementsByTagName("button");
 
-document.addEventListener("load", start());
+document.onload = start();
 
 function start() {
     ul[0].style.margin = 0;
@@ -32,9 +32,17 @@ function start() {
     }
 }
 
+ul[0].addEventListener("click", menu);
+button[0].addEventListener("click", bigger);
+button[1].addEventListener("click", colour);
+button[2].addEventListener("click", capitalize);
+button[3].addEventListener("click", hide);
+button[4].addEventListener("click", show);
+
 function menu() {
     if (li[0].style.display == "none") {
         ul[0].style.backgroundColor = "cornflowerblue";
+        ul[0].focus();
         for (let i = 0; i < li.length; i++) {
             li[i].style.display = "block";
             li[i].style.backgroundColor = "mediumpurple";
@@ -91,7 +99,7 @@ for (i = 0; i < list.length; i++) {
 
 for (i = 0; i < li.length; i++) {
     li[i].addEventListener('mouseover', function() {
-        this.style.backgroundColor = "grey";
+        this.style.backgroundColor = "lightgray";
     });
     li[i].addEventListener('mouseout', function() {
         this.style.backgroundColor = "mediumpurple";
