@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+* {
+  font-family: Roboto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #f4a83d;
+  color: white;
+  border: 2px outset;
+  padding: 8px 12px;
+  font-size: 10px;
+}
+
+#main-menu {
+  background-color: #140e44;
+  padding: 6px 40px 2px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 6px gray;
+}
+#main-menu li {
+  display: inline;
+  padding-right: 16px;
+}
+#main-menu li a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+#main-menu li a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-inline: 40px;
+}
+#main #content {
+  padding-inline: 8px;
+}
+#main #content a {
+  text-decoration: none;
+  font-style: italic;
+  color: #f89868;
+}
+#main #content input {
+  margin-block: 2px;
+  border: 0px;
+}
+#main #content input:hover {
+  border: 3px solid rgba(147, 166, 228, 0.5960784314);
+  border-radius: 5px;
+}
+#main #sidebar li {
+  padding: 12px;
+  border-bottom: 1px dashed #ddd;
+}
+#main #sidebar li:hover {
+  background-color: #ddd;
+}
+
+#footer {
+  background-color: #6788f1;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  #main {
+    padding-inline: 180px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #main #content {
+    width: 75%;
+  }
+  #main #sidebar {
+    width: 15%;
+  }
+}/*# sourceMappingURL=style.css.map */

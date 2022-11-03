@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {    
+    #main {
+        padding-inline: 180px;
+        flex-direction: row;
+        justify-content: space-between;
+        #content {
+            width:75%
+        }
+        #sidebar {            
+            width:15%;
+        }
+    }
+}

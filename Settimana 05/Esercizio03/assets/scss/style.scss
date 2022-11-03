@@ -1,0 +1,99 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+@mixin headings {
+    font-weight: 500;
+}
+
+@mixin links {
+    text-decoration: none;
+    font-style: italic;
+}
+
+* {
+    font-family: Roboto;
+}
+
+ul {
+    list-style-type: none;
+    padding:0;
+}
+
+h1 {
+    @include headings;
+    font-size: 2rem;
+}
+
+h2 {
+    @include headings;
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: $colorBtn;
+    color: $colorLight1;
+    border: 2px outset;
+    padding: 8px 12px;
+    font-size: 10px;
+}
+
+#main-menu {
+    background-color: $navbg;
+    padding: 6px 40px 2px;
+    border-radius: 10px;
+    border: 1px solid $colorLight1;
+    box-shadow: 2px 2px 6px $colorLight3;
+
+    li {
+        display:inline;
+        padding-right: 16px;        
+        a {            
+            @include links;
+            color: $colorLight1;
+            &:hover {
+                text-decoration:underline;
+            }           
+        }
+    }        
+}
+
+#main {
+    display:flex;
+    flex-direction: column-reverse;
+    padding-inline: 40px;
+    #content {
+        padding-inline: 8px;
+        a {
+            @include links;
+            color:$colorEm;    
+        }
+        input {
+            margin-block: 2px;
+            border: 0px;
+            &:hover {
+                border: 3px solid $input;
+                border-radius: 5px;
+            }
+        }
+    }    
+    #sidebar {        
+        li {
+            padding: 12px;
+            border-bottom: 1px dashed $colorLight2;
+            &:hover {
+                background-color: $colorLight2;
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: $footbg;
+    height: 60px;
+}
+
+@import "media";
