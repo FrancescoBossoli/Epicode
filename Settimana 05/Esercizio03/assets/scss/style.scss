@@ -72,11 +72,12 @@ button {
             color:$colorEm;    
         }
         input {
-            margin-block: 2px;
+            margin-block: 3px;
             border: 0px;
             &:hover {
                 border: 3px solid $input;
                 border-radius: 5px;
+                margin:0;
             }
         }
     }    

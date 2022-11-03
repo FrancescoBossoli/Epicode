@@ -64,12 +64,13 @@ button {
   color: #f89868;
 }
 #main #content input {
-  margin-block: 2px;
+  margin-block: 3px;
   border: 0px;
 }
 #main #content input:hover {
-  border: 3px solid rgba(147, 166, 228, 0.5960784314);
+  border: 3px solid #93a6e498;
   border-radius: 5px;
+  margin:0;
 }
 #main #sidebar li {
   padding: 12px;
