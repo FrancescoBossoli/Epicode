@@ -1,0 +1,23 @@
+.table {
+    --bs-table-hover-bg: #ffccaa;
+}
+
+.page-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:20px;
+    width: 40px;
+}
+
+.active {
+    --bs-pagination-active-bg: orange;
+    --bs-pagination-active-border-color: orange;    
+}
+
+.pagination {
+    --bs-pagination-color: green;
+}
+
+th, tr {
+    width: 25%;
+}
