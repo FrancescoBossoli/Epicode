@@ -135,18 +135,16 @@ function init() {
     Weblist.arrange();
 }
 
-/*
 const users = [
-    {number: 1, nome: "Carlo", cognome: "Verdi", classe: "A"},
-    {number: 2, nome: "Franco", cognome: "Bianchi", classe: "B"},
-    {number: 3, nome: "Piero", cognome: "Rossi", classe: "B"},
-    {number: 4, nome: "Dario", cognome: "Neri", classe: "C"},
-    {number: 5, nome: "Marco", cognome: "Verdi", classe: "A"},
-    {number: 6, nome: "Bruno", cognome: "Bianchi", classe: "A"},
-    {number: 7, nome: "Mario", cognome: "Rossi", classe: "C"},
-    {number: 8, nome: "Paolo", cognome: "Neri", classe: "B"},
+    {number: 1, name: "Carlo", surname: "Verdi", class: "A"},
+    {number: 2, name: "Franco", surname: "Bianchi", class: "B"},
+    {number: 3, name: "Piero", surname: "Rossi", class: "B"},
+    {number: 4, name: "Dario", surname: "Neri", class: "C"},
+    {number: 5, name: "Marco", surname: "Verdi", class: "A"},
+    {number: 6, name: "Bruno", surname: "Bianchi", class: "A"},
+    {number: 7, name: "Mario", surname: "Rossi", class: "C"},
+    {number: 8, name: "Paolo", surname: "Neri", class: "B"},
 ]
-*/
 
 const list = [
     {number: 1, name: "Leonardo", surname: "Rossi", class: "A"},
