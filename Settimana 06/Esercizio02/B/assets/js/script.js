@@ -4,14 +4,7 @@ class Pagination {
         this.pageSize = _size;
         this.lines = this.items.length;
         this.currentPage = 1;
-        this.pages = () => {
-            let lines = this.items.length;
-            let pages = parseInt(lines / this.pageSize);
-            if (lines % this.pageSize > 0) {
-                pages++;
-            }
-            return pages;
-        }
+        this.pages = Math.ceil(this.lines / this.pageSize);
         this.visibleElements = () => {
             let elements = [];
             for (let i = 0; i < this.pageSize; i++) {
@@ -58,7 +51,7 @@ class Pagination {
             event.preventDefault();
             page.previousPage();
         });
-        for (let i = 1; i <= this.pages(); i++) {
+        for (let i = 1; i <= this.pages; i++) {
             let btnX = document.createElement("button");
             btnX.className = "btn btn-success opacity-75 col-1 border border-1";
             btnX.innerHTML = i;
@@ -74,8 +67,8 @@ class Pagination {
                     btnX.classList.remove("d-none");
                 }
             }
-            if (this.currentPage >= this.pages() - 2) {
-                if (i == (this.pages() - 3) || i == (this.pages() - 4)) {
+            if (this.currentPage >= this.pages - 2) {
+                if (i == (this.pages - 3) || i == (this.pages - 4)) {
                     btnX.classList.remove("d-none");
                 }
             }
@@ -103,8 +96,8 @@ class Pagination {
     }
     nextPage() {
         this.currentPage++;
-        if (this.currentPage > this.pages()) {
-            this.currentPage = this.pages();
+        if (this.currentPage > this.pages) {
+            this.currentPage = this.pages;
         }
         this.arrange();
     }
@@ -120,7 +113,7 @@ class Pagination {
         this.arrange();
     }
     lastPage() {
-        this.currentPage = this.pages();        
+        this.currentPage = this.pages;        
         this.arrange();
     }
     goToPage(x) {

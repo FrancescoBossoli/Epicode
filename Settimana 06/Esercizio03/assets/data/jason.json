@@ -1,0 +1,202 @@
+{
+    "studenti":[
+        {
+            "id": 1,
+            "nome": "Alex",
+            "cognome": "Paganucci",
+            "classe": "FS0622"
+        },
+        {
+            "id": 2,
+            "nome": "Andrea",
+            "cognome": "Cursi",
+            "classe": "FS0622"
+        },
+        {
+            "id": 3,
+            "nome": "David",
+            "cognome": "Gualberto",
+            "classe": "FS0622"
+        },
+        {
+            "id": 4,
+            "nome": "Davide",
+            "cognome": "Alfonsi",
+            "classe": "FS0622"
+        },
+        {
+            "id": 5,
+            "nome": "Ewelina",
+            "cognome": "Czaja",
+            "classe": "FS0622"
+        },
+        {
+            "id": 6,
+            "nome": "Francesco",
+            "cognome": "Bossoli",
+            "classe": "FS0622"
+        },
+        {
+            "id": 7,
+            "nome": "Francesco",
+            "cognome": "Lisena",
+            "classe": "FS0622"
+        },
+        {
+            "id": 8,
+            "nome": "Gennaro",
+            "cognome": "Notaro",
+            "classe": "FS0622"
+        },
+        {
+            "id": 9,
+            "nome": "Giulia",
+            "cognome": "Franzosi",
+            "classe": "FS0622"
+        },
+        {
+            "id": 10,
+            "nome": "Giulio",
+            "cognome": "Tome",
+            "classe": "FS0622"
+        },
+        {
+            "id": 11,
+            "nome": "Ilaria",
+            "cognome": "Cognata",
+            "classe": "FS0622"
+        },
+        {
+            "id": 12,
+            "nome": "Lorenzo",
+            "cognome": "Altomonte",
+            "classe": "FS0622"
+        },
+        {
+            "id": 13,
+            "nome": "Lorenzo",
+            "cognome": "De Carolis",
+            "classe": "FS0622"
+        },
+        {
+            "id": 14,
+            "nome": "Lorenzo",
+            "cognome": "Ciarcianelli",
+            "classe": "FS0622"
+        },
+        {
+            "id": 15,
+            "nome": "Marco",
+            "cognome": "Brandi",
+            "classe": "FS0622"
+        },
+        {
+            "id": 16,
+            "nome": "Marta",
+            "cognome": "Liguori",
+            "classe": "FS0622"
+        },
+        {
+            "id": 17,
+            "nome": "Maurizio",
+            "cognome": "Villanova",
+            "classe": "FS0622"
+        },
+        {
+            "id": 18,
+            "nome": "Paolo",
+            "cognome": "Russo",
+            "classe": "FS0622"
+        }
+    ],
+
+    "libri letti" : [
+        {
+            "id": 1,
+            "titolo": "Il signore degli anelli",
+            "autore": "John R. R. Tolkien",
+            "casa editrice": "Bompiani"
+        },
+        {
+            "id": 2,
+            "titolo": "Ivanhoe",
+            "autore": "Walter Scott",
+            "casa editrice": "Mondadori"
+        },
+        {
+            "id": 3,
+            "titolo": "Il cavaliere dei Sette Regni",
+            "autore": "George R. R. Martin",
+            "casa editrice": "Mondadori"
+        },
+        {
+            "id": 4,
+            "titolo": "Shantaram",
+            "autore": "Gregory David Roberts",            
+            "casa editrice": "Neri Pozza"
+        },
+        {
+            "id": 5,
+            "titolo": "Il viaggio in Occidente",
+            "autore": "Ch'eng-en Wu",
+            "casa editrice": "Luni"
+        },
+        {
+            "id": 6,
+            "titolo": "In riva all'acqua",
+            "autore": "Luo Guanzhong",
+            "casa editrice": "Luni"
+        }
+    ],
+
+    "elenco film": [
+        {
+            "id": 1,
+            "titolo": "Le ali della libertà",
+            "regista": "Frank Darabont",
+            "anno": 1994
+        },
+        {
+            "id": 2,
+            "titolo": "Il padrino",
+            "regista": "Francis Ford Coppola",
+            "anno": 1972
+        },
+        {
+            "id": 3,
+            "titolo": "Il cavaliere oscuro",
+            "regista": "Christopher Nolan",
+            "anno": 2008
+        },
+        {
+            "id": 4,
+            "titolo": "Il Signore degli Anelli - Il ritorno del re",
+            "regista": "Peter Jackson",
+            "anno": 2003
+        },
+        {
+            "id": 5,
+            "titolo": "Pulp Fiction",
+            "regista": "Quentin Tarantino",
+            "anno": 1994
+        },
+        {
+            "id": 6,
+            "titolo": "Fight Club",
+            "regista": "David Fincher",
+            "anno": 1999
+        },
+        {
+            "id": 7,
+            "titolo": "Fight Club",
+            "regista": "David Fincher",
+            "anno": 1999
+        },
+        {
+            "id": 8,
+            "titolo": "Inception",
+            "regista": "Christopher Nolan",
+            "anno": 2010
+        }
+    ]
+}
