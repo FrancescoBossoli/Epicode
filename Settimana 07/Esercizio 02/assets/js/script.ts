@@ -1,4 +1,3 @@
-
 class SonAccount {
     balance:number;
     constructor (balanceInit:number = 0) {
