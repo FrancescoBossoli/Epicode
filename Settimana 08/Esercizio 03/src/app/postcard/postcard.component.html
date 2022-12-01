@@ -1,0 +1,27 @@
+<ng-template #button><ng-content></ng-content></ng-template>
+
+<div class="card bg-warning text-bg-warning my-3" *ngIf="p.type == 'education'">
+    <h5 class="card-header">{{p.id}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">{{p.title}}</h5>
+        <p class="card-text">{{p.body}}</p>
+        <ng-container *ngTemplateOutlet="button"></ng-container>
+    </div>
+</div>
+<div class="card bg-success bg-opacity-50 text-bg-warning my-3" *ngIf="p.type == 'news'">
+    <h5 class="card-header">{{p.id}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">{{p.title}}</h5>
+        <p class="card-text">{{p.body}}</p>
+        <ng-container *ngTemplateOutlet="button"></ng-container>
+    </div>
+</div>
+<div class="card bg-info text-bg-info my-3" *ngIf="p.type == 'politic'">
+    <h5 class="card-header">{{p.id}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">{{p.title}}</h5>
+        <p class="card-text">{{p.body}}</p>
+        <ng-container *ngTemplateOutlet="button"></ng-container>
+    </div>
+</div>
+

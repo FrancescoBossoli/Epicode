@@ -1,0 +1,3 @@
+<app-postcard *ngFor="let post of posts" [p]="post">
+    <button class="btn btn-success w-25" (click)="changeActiveStatus(post.id)">Attiva</button>
+</app-postcard>
