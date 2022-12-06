@@ -1,0 +1,76 @@
+<div class="container mt-3">
+    <h1 class="text-center">REACTIVE-FORM</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form [formGroup]="form">
+                <div>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" formControlName="name" id="name" class="form-control">
+                        <span *ngIf="getFormValue('name')?.invalid && getFormValue('name')?.touched">
+                            <ng-container *ngIf="getErrors('name', 'required')">Questo campo è obbligatorio</ng-container>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="alterEgo">Alter Ego:</label>
+                        <input type="alterEgo" formControlName="alterEgo" id="alterEgo" class="form-control">
+                        <span *ngIf="getFormValue('alterEgo')?.invalid && getFormValue('alterEgo')?.touched">
+                            <ng-container *ngIf="getErrors('alterEgo', 'required')">Questo campo è obbligatorio</ng-container>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="planet">Pianeta di origine:</label>
+                        <input type="planet" formControlName="planet" id="planet" class="form-control">
+                        <span *ngIf="getFormValue('planet')?.invalid && getFormValue('planet')?.touched">
+                            <ng-container *ngIf="getErrors('planet', 'required')">Questo campo è obbligatorio</ng-container>
+                            <ng-container *ngIf="getErrors('planet', 'minlength')">Questo campo deve contenere almeno 5 caratteri</ng-container>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enemy">Nemico:</label>
+                        <input type="enemy" formControlName="enemy" id="enemy" class="form-control">
+                        <span *ngIf="getFormValue('enemy')?.invalid && getFormValue('enemy')?.touched">
+                            <ng-container *ngIf="getErrors('enemy', 'required')">Questo campo è obbligatorio</ng-container>
+                            <ng-container *ngIf="getErrors('enemy', 'maxlength')">Questo campo deve contenere al massimo 10 caratteri</ng-container>
+                        </span>
+                    </div>
+                </div>
+                <div formArrayName="power" class="my-2">
+                    <div class="d-flex align-items-baseline">
+                        <p class="me-2">Superpoteri:</p>
+                        <button type="button" (click)="addParam('power')" class="btn btn-success">Aggiungi</button>
+                    </div>
+                    <div class="form-group mb-2" *ngFor="let power of getParam('power'); let i = index">
+                        <input type="text" class="form-control" [formControlName] = "i">
+                    </div>
+                </div>
+                <div formArrayName="weakness" class="my-2">
+                    <div class="d-flex align-items-baseline">
+                        <p class="me-2">Debolezza:</p>
+                        <button type="button" (click)="addParam('weakness')" class="btn btn-success">Aggiungi</button>
+                    </div>
+                    <div class="form-group mb-2" *ngFor="let weakness of getParam('weakness'); let i = index">
+                        <input type="text" class="form-control" [formControlName] = "i">
+                    </div>
+                </div>
+                <button type="submit" (click)="submit()" class="btn btn-primary">Invia</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div *ngIf="hero.name != ''" class="col">
+                <h2>I tuoi dati</h2>
+                <p>Nome: {{ hero.name }}</p>
+                <p>Alter Ego: {{ hero.alterEgo }}</p>
+                <p>Superpotere: {{ hero.power }}</p>
+                <p>Pianeta d'origine: {{ hero.planet }}</p>
+                <p>Nemico: {{ hero.enemy }}</p>
+                <p>Debolezza: {{ hero.weakness }}</p>
+            </div>
+        </div>
+    </div>
+</div>
